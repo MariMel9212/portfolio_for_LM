@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Public Sans";
+  src: url("fonts/PublicSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("fonts/PublicSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("fonts/PublicSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: #fff;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  color: #27292d;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+}
+
+.page {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.ear {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.column {
+  flex: 0 0 600px;
+  width: 600px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bar {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #27292d;
+}
+
+.lang svg {
+  display: block;
+  flex: 0 0 16px;
+}
+
+.contact {
+  background: #f2f2f2;
+  border-radius: 15px;
+  padding: 10px 11px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #27292d;
+}
+
+.intro {
+  width: 503px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.who {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.avatar {
+  width: 134px;
+  height: 134px;
+  border-radius: 8px;
+  background: #bbb9b9;
+}
+
+.id {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+h1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #27292d;
+}
+
+.role,
+.bio {
+  font-weight: 400;
+  font-size: 14px;
+  color: #27292d;
+}
+
+.role {
+  line-height: 20px;
+}
+
+.bio {
+  line-height: 22px;
+}
