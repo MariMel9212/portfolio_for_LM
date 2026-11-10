@@ -93,9 +93,9 @@ body {
   color: #27292d;
 }
 
-.lang svg {
+.sun {
   display: block;
-  flex: 0 0 16px;
+  flex: 0 0 auto;
 }
 
 .contact {
@@ -109,7 +109,7 @@ body {
 }
 
 .intro {
-  width: 503px;
+  width: 505px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -125,8 +125,20 @@ body {
 .avatar {
   width: 134px;
   height: 134px;
-  border-radius: 8px;
+  border-radius: 7.856px;
+  overflow: hidden;
+  position: relative;
   background: #bbb9b9;
+}
+
+.avatar img {
+  position: absolute;
+  left: 0;
+  width: 134px;
+  height: 237px;
+  top: calc(50% + 29.5px);
+  transform: translateY(-50%);
+  object-fit: cover;
 }
 
 .id {
@@ -152,6 +164,7 @@ h1 {
 
 .role {
   line-height: 20px;
+  opacity: 0.5;
 }
 
 .bio {
